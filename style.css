@@ -15,7 +15,6 @@ body {
 }
 
 .main{
-    /* background-color: #fff; */
     width: 100%;
     max-width: 800px;
     margin: 5% auto;
@@ -34,7 +33,6 @@ header {
 
 header h1 {
     font-family: 'Roboto', sans-serif;
-    /* letter-spacing: 1px; */
     margin-bottom: 20px;
 }
 
@@ -99,7 +97,6 @@ ul li:hover {
 ul li.checked {
     background: #888;
     color: #fff;
-    /* text-decoration: line-through; */
 }
 
 ul li.checked::before {
@@ -143,44 +140,6 @@ ul li .actions button:hover {
     font-size: 12px;
 }
 
-/* .complete-btn,
-.edit-i,
-.save-i,
-.delete-i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 14px;
-    color: #333;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    border: none;
-    background: transparent;
-}
-
-.edit-i,
-.save-i,
-.delete-i {
-    margin-right: 10px;
-}
-
-.edit-i {
-    right: 100px; 
-}
-
-.save-i {
-    right: 100px; 
-}
-
-.delete-i {
-    right: 40px; 
-}
-
-.complete-btn {
-    right: 150px;
-    font-size: 12px;
-} */
-
 /* Styling for .complete-btn */
 .complete-btn {
     font-size: 12px;
@@ -190,7 +149,6 @@ ul li .actions button:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    /* transition: background-color 0.3s; */
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
@@ -200,19 +158,6 @@ ul li .actions button:hover {
     transform: scale(1.05);
 }
 
-/* Styling for .edit-i, .save-i, .delete-i (assuming these are icons) */
-/* .actions button.edit-i,
-.actions button.save-i,
-.actions button.delete-i {
-    font-size: 16px;
-    color: #333;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    margin-left: 10px;
-    transition: color 0.3s;
-}
-*/
 .edit-i, .save-i, .delete-i {
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
