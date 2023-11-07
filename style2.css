@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url('demo-3.png') no-repeat center/cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.main{
+    /* background-color: #fff; */
+    width: 100%;
+    max-width: 800px;
+    margin: 5% auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+header {
+    background: linear-gradient(90deg, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5) 100%);
+    padding: 20px 40px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    /* letter-spacing: 1px; */
+    margin-bottom: 20px;
+}
+
+input {
+    width: 75%;
+    margin-right: 0;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+
+.addBtn {
+    width: 25%;
+    padding: 10px;
+    margin-left: 0;
+    background: #4CAF50;
+    color: white;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.addBtn:hover {
+    background: #45a049;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 40px;
+    margin: 10px 0;
+    background: #ffffff;
+    font-size: 18px;
+    transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li:hover {
+    box-shadow: 0px 4px 8px rgba(237, 235, 235, 0.4);
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    /* text-decoration: line-through; */
+}
+
+ul li.checked::before {
+    content: '\2713';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+
+ul li span{
+    width: 75%;
+    margin-right: 0;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+
+
+ul li .actions {
+    display: flex;
+}
+
+ul li .actions button {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+ul li .actions button:hover {
+    color: #4CAF50;
+}
+
+.complete-btn {
+    font-size: 12px;
+}
+
+/* .complete-btn,
+.edit-i,
+.save-i,
+.delete-i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    background: transparent;
+}
+
+.edit-i,
+.save-i,
+.delete-i {
+    margin-right: 10px;
+}
+
+.edit-i {
+    right: 100px; 
+}
+
+.save-i {
+    right: 100px; 
+}
+
+.delete-i {
+    right: 40px; 
+}
+
+.complete-btn {
+    right: 150px;
+    font-size: 12px;
+} */
+
+/* Styling for .complete-btn */
+.complete-btn {
+    font-size: 12px;
+    background-color: rgb(93, 91, 91);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* transition: background-color 0.3s; */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.complete-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Styling for .edit-i, .save-i, .delete-i (assuming these are icons) */
+/* .actions button.edit-i,
+.actions button.save-i,
+.actions button.delete-i {
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+*/
+.edit-i, .save-i, .delete-i {
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+ .edit-i:hover,
+.save-i:hover {
+    transform: scale(1.05);
+    color: #4CAF50;
+} 
+
+.delete-i:hover {
+    transform: scale(1.05);
+    color: red;
+} 
